@@ -1,12 +1,11 @@
 $(document).ready(function(){
     $('.testimonial-content').owlCarousel({
     loop:true,
-    margin:50,
     nav:true,
     dots:true,
     merge:false,
     merfeFit:false,
-    autoplay:true,
+    autoplay:false,
     autoplayTimeout:3000,
     items:2,
 navText:[
@@ -15,15 +14,20 @@ navText:[
 ],
     responsive:{
       0:{
-        items:1
+        items:1,
       },
       600:{
-        items:1
+        items:1,
       },
-      1000:{
-        items:2
+      950:{
+        items:2,
       }
     }
 
   })
 })
+
+
+window.onresize=function(){
+    console.log( $(window).width())
+}
