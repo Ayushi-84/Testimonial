@@ -8,7 +8,7 @@ $(document).ready(function(){
     merfeFit:false,
     autoplay:true,
     autoplayTimeout:3000,
-    items:3,
+    items:2,
 navText:[
   "<i class='fa fa-angle-left'></i>",
   "<i class='fa fa-angle-right'></i>"
@@ -20,11 +20,8 @@ navText:[
       600:{
         items:1
       },
-      650:{
-        items:2
-      },
       1000:{
-        items:3
+        items:2
       }
     }
 
