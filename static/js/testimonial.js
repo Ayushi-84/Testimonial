@@ -6,6 +6,8 @@ $(document).ready(function(){
     dots:true,
     merge:false,
     merfeFit:false,
+    autoplay:true,
+    autoplayTimeout:3000,
     items:3,
 navText:[
   "<i class='fa fa-angle-left'></i>",
