@@ -1,0 +1,20 @@
+     $(document).ready(function(){
+            $('.testimonial-content').owlCarousel({
+            loop:true,
+            margin:50,
+            nav:false,
+            dots:true,
+            responsive:{
+              0:{
+                item:1
+              },
+              600:{
+                item:1
+              },
+              1000:{
+                item:2
+              }
+            }
+
+          })
+        })
