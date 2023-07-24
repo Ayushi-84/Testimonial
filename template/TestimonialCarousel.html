@@ -4,14 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
-    />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-    <link rel="stylesheet" type="text/css" href="../static/style/testimonialAgain.css" />
+    <link rel="stylesheet" type="text/css" href="../static/style/TestimonialCarousel.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
-    <script type="text/javascript" src="../static/js/testimonial.js"></script>
+    <script src="../static/js/TestimonialCarousel.js"></script>
   </head>
   <body>
     <section class="testimonial-area">
@@ -21,8 +17,42 @@
           <p>what client say about us</p>
           <div></div>
         </div>
-        <div class="testimonial-content-area">
-        <div class="testimonial-content owl-carousel">
+      
+        <div
+        class="carousel"
+        role="group"
+        aria-roledescription="carousel"
+        aria-label="Student testimonials"
+        data-carousel
+      >
+        <div class="carousel-buttons">
+          <button
+            class="carousel-button carousel-button_previous"
+            aria-label="Previous slide"
+            data-carousel-button-previous
+          >
+            <span class="fas fa-chevron-circle-left"></span>
+          </button>
+          <button
+            class="carousel-button carousel-button_next"
+            aria-label="Next slide"
+            data-carousel-button-next
+          >
+            <span class="fas fa-chevron-circle-right"></span>
+          </button>
+        </div>
+        <div
+          class="slides"
+          aria-live="polite"
+          data-carousel-slides-container
+        >
+          <div
+            class="slide"
+            role="group"
+            aria-roledescription="slide"
+            aria-hidden="false"
+            aria-labelledby="testimonial1"
+          >
           <div class="single-testimonial">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam eaque
@@ -41,6 +71,15 @@
               </div>
             </div>
           </div>
+          </div>
+      
+          <div
+            class="slide"
+            role="group"
+            aria-roledescription="slide"
+            aria-hidden="false"
+            aria-labelledby="testimonial2"
+          >
           <div class="single-testimonial">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam eaque
@@ -59,7 +98,15 @@
               </div>
             </div>
           </div>
-          <div class="single-testimonial">
+          </div>
+          <div
+          class="slide"
+          role="group"
+          aria-roledescription="slide"
+          aria-hidden="true"
+          aria-labelledby="testimonial3"
+        >
+        <div class="single-testimonial">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam eaque
               nostrum accusantium laudantium molestias magni libero corporis
@@ -74,37 +121,41 @@
               <div class="client-details">
                 <h6>Shubham Trivedi</h6>
                 <span>Developer, EL Team</span>
-              </div>
-            </div>
-          </div>
-          <div class="single-testimonial">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam eaque
-              nostrum accusantium laudantium molestias magni libero corporis
-              nihil numquam quibusdam.
-            </p>
-            <div class="client-info">
-              <div class="client-pic">
-                <a href="#">
-                  <img src="../static/images/1.png" />
-                </a>
-              </div>
-              <div class="client-details">
-                <h6>Shourya</h6>
-                <span>Designer, EL Team</span>
               </div>
             </div>
           </div>
         </div>
+        <div
+        class="slide"
+        role="group"
+        aria-roledescription="slide"
+        aria-hidden="true"
+        aria-labelledby="testimonial3"
+      >
+      <div class="single-testimonial">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam eaque
+          nostrum accusantium laudantium molestias magni libero corporis
+          nihil numquam quibusdam.
+        </p>
+        <div class="client-info">
+          <div class="client-pic">
+            <a href="#">
+              <img src="../static/images/1.png" />
+            </a>
+          </div>
+          <div class="client-details">
+            <h6>Shourya</h6>
+            <span>Designer, EL Team</span>
+          </div>
+        </div>
       </div>
+        </div>
+        </div>
       </div>
       </div>
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
-      <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
-        <script type="text/javascript" src="../static/js/testimonialAgain.js">
-        </script>
-        
+   <script src="../static/js/TestimonialCarousel.js"></script>
   </body>
 </html>
